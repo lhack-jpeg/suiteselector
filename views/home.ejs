@@ -1,16 +1,18 @@
 <% layout('layouts/boilerplate') %>
 <h1>Welcome to the toilet selector</h1>
-<div>
+<div class="form">
     <form action="/" method="POST">
-        <label for="wasteType">Select your waste type</label>
-        <select name="waste" id="wasteType">
-            <option value="PTrap">P Trap</option>
-            <option value="STrap">S Trap</option>
-        </select>
-        <br />
-        <label for="outlet">What is you outlet measurement:</label>
-        <input type="number" name="outlet" id="outlet" />
-        <br />
+        <div class="select">
+            <label for="wasteType">Select your waste type</label>
+            <select name="waste" id="wasteType">
+                <option value="STrap">S Trap</option>
+                <option value="PTrap">P Trap</option>
+            </select>
+        </div>
+        <div class="select">
+            <label for="outlet">What is you outlet measurement:</label>
+            <input type="number" name="outlet" id="outlet" />
+        </div>
         <button type="submit">Submit</button>
     </form>
 </div>

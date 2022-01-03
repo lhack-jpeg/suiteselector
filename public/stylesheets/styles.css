@@ -7,8 +7,30 @@ body {
     font-family: sans-serif;
 }
 
+h1 {
+    text-align: center;
+}
+
 li {
     list-style-type: none;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.select {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+}
+
+.form button {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .navbar {
