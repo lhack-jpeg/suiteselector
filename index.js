@@ -44,13 +44,34 @@ app.get(
     '/show',
     wrapAsync(async (req, res) => {
         const toilets = await Toilets.find({});
-        res.render('toilet/showAll', { toilets });
+        res.render('toilet/index', { toilets });
     })
 );
 
-app.post('/', (req, res) => {
-    res.send(req.body);
-});
+app.post(
+    '/',
+    wrapAsync(async (req, res) => {
+        console.log(req.body);
+        const { waste, outlet } = req.body;
+        if (waste === 'STrap') {
+            const toilets = await Toilets.find({
+                $or: [
+                    { STrapSetout: outlet },
+                    {
+                        $and: [
+                            { STrapMin: { $lte: outlet } },
+                            { STrapMax: { $gte: outlet } },
+                        ],
+                    },
+                ],
+            });
+            res.render('toilet/show', { toilets });
+        } else {
+            const toilets = await Toilets.find({ PTrapSetout: { $eq: 185 } });
+            res.render('toilet/show', { toilets });
+        }
+    })
+);
 
 app.all('*', (res, req, next) => {
     next(new expressError('Page not found', 404));
