@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 const ToiletSchema = new Schema({
     name: String,
     code: String,
+    image: String,
     url: String,
     spec: String,
     PTrapSetout: Number,
