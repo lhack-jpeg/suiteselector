@@ -30,10 +30,21 @@ app.get('/', (req, res) => {
 });
 
 app.get(
+    '/show/:code',
+    wrapAsync(async (req, res) => {
+        const { code } = req.params;
+        console.log(code);
+        const toilet = await Toilets.findOne({ code: code });
+        console.log(toilet);
+        res.render('toilet/showOne', { toilet });
+    })
+);
+
+app.get(
     '/show',
     wrapAsync(async (req, res) => {
         const toilets = await Toilets.find({});
-        res.render('/toilet/showAll', { toilets });
+        res.render('toilet/showAll', { toilets });
     })
 );
 
