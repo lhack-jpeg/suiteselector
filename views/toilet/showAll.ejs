@@ -1,0 +1,8 @@
+<% layout('layouts/boilerplate') %>
+<h1>All Toilets</h1>
+<% for (let toilet of toilets) { %>
+<div>
+    <h3><%= toilet.name%></h3>
+    <img src="<%= toilet.image%>" alt="" />
+</div>
+<% } %>

@@ -33,7 +33,7 @@ app.get(
     '/show',
     wrapAsync(async (req, res) => {
         const toilets = await Toilets.find({});
-        res.render('showAll', { toilets });
+        res.render('/toilet/showAll', { toilets });
     })
 );
 
