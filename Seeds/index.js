@@ -19,6 +19,7 @@ const seedDB = async () => {
     for (const toilet of toiletData) {
         const newToilet = new Toilet({
             name: toilet.productName,
+            code: toilet.productCode,
             url: toilet.pageUrl,
             image: toilet.image,
             spec: toilet.specSheet,
