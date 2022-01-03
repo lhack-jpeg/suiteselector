@@ -1,0 +1,23 @@
+<% layout('layouts/boilerplate') %>
+<h2><%= toilet.name %></h2>
+<div>
+    <img id="toilet_image" src="<%= toilet.image%>" alt="" />
+    <div>
+        <h3>Toilet Setout</h3>
+        <% if (toilet.PTrapSetout){ %>
+        <div>
+            <p>P Trap Set Out: <%=toilet.PTrapSetout%>mm</p>
+            <%}%> <% if (toilet.STrapMin) { %>
+            <p>S Trap Max Setout: <%= toilet.STrapMax %>mm</p>
+            <p>S Trap Min Setout: <%= toilet.STrapMin %>mm</p>
+            <% } else { %>
+            <p>S Trap Set Out: <%= toilet.STrapSetout %>mm</p>
+            <%}%>
+        </div>
+        <div>
+            <h3>Product Info</h3>
+            <p>See proudct's webpage <a href="<%= toilet.url%>">here</a></p>
+            <p>See Spec Sheet <a href="<%= toilet.spec %> ">here</a></p>
+        </div>
+    </div>
+</div>
