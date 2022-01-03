@@ -2,7 +2,9 @@ const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
 const expressError = require('./Utilities/ExpressError');
+const wrapAsync = require('./utilities/wrapAsync');
 const ejsMate = require('ejs-mate');
+const Toilets = require('./models/toilets');
 
 const app = express();
 app.engine('ejs', ejsMate);
@@ -25,6 +27,18 @@ db.once('open', () => {
 
 app.get('/', (req, res) => {
     res.render('home');
+});
+
+app.get(
+    '/show',
+    wrapAsync(async (req, res) => {
+        const toilets = await Toilets.find({});
+        res.render('showAll', { toilets });
+    })
+);
+
+app.post('/', (req, res) => {
+    res.send(req.body);
 });
 
 app.all('*', (res, req, next) => {
