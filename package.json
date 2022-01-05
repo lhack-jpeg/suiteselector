@@ -12,6 +12,7 @@
   "dependencies": {
     "ejs-mate": "^3.0.0",
     "express": "^4.17.2",
+    "express-mongo-sanitize": "^2.1.0",
     "mongoose": "^6.1.4"
   }
 }
