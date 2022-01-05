@@ -2,9 +2,9 @@ const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
 const expressError = require('./Utilities/ExpressError');
-const wrapAsync = require('./utilities/wrapAsync');
 const ejsMate = require('ejs-mate');
-const Toilets = require('./models/toilets');
+const mongoSanitize = require('express-mongo-sanitize');
+const basicRoutes = require('./routes/basicRoutes');
 
 const app = express();
 app.engine('ejs', ejsMate);
@@ -12,6 +12,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(mongoSanitize());
 
 mongoose.connect('mongodb://localhost:27017/Toilet', {
     useNewUrlParser: true,
@@ -25,53 +26,7 @@ db.once('open', () => {
     console.log('Database connected');
 });
 
-app.get('/', (req, res) => {
-    res.render('home');
-});
-
-app.get(
-    '/show/:code',
-    wrapAsync(async (req, res) => {
-        const { code } = req.params;
-        console.log(code);
-        const toilet = await Toilets.findOne({ code: code });
-        console.log(toilet);
-        res.render('toilet/showOne', { toilet });
-    })
-);
-
-app.get(
-    '/show',
-    wrapAsync(async (req, res) => {
-        const toilets = await Toilets.find({});
-        res.render('toilet/index', { toilets });
-    })
-);
-
-app.post(
-    '/',
-    wrapAsync(async (req, res) => {
-        console.log(req.body);
-        const { waste, outlet } = req.body;
-        if (waste === 'STrap') {
-            const toilets = await Toilets.find({
-                $or: [
-                    { STrapSetout: outlet },
-                    {
-                        $and: [
-                            { STrapMin: { $lte: outlet } },
-                            { STrapMax: { $gte: outlet } },
-                        ],
-                    },
-                ],
-            });
-            res.render('toilet/show', { toilets });
-        } else {
-            const toilets = await Toilets.find({ PTrapSetout: { $eq: 185 } });
-            res.render('toilet/show', { toilets });
-        }
-    })
-);
+app.use('/', basicRoutes);
 
 app.all('*', (res, req, next) => {
     next(new expressError('Page not found', 404));
