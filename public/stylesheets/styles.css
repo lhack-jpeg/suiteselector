@@ -45,6 +45,10 @@ a {
     background-color: #1346ef;
     color: #fff;
     margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 .nav-links a {
@@ -74,10 +78,11 @@ a {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-auto-rows: minmax(200px, auto);
     gap: 20px;
     margin-top: 40px;
+    text-align: center;
 }
 
 .card {
@@ -87,6 +92,9 @@ a {
     text-align: center;
     font-size: 14px;
     transition: transform 0.3s;
+    background-color: white;
+    position: relative;
+    width: 100%;
 }
 
 .card:hover {
@@ -100,6 +108,9 @@ a {
     padding: 5px;
     border-radius: 2px;
     transition: color 0.25s, box-shadow 0.5s, background-color 0.4s;
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
 }
 
 .card a:hover {
@@ -112,15 +123,12 @@ a {
 .card img {
     height: 200px;
     width: 200px;
+    margin-top: 10px;
 }
 
-.container h1 {
+.no-result h1 {
     color: red;
     font-size: 40px;
-}
-
-.no-result {
-    margin: auto;
 }
 
 .info {

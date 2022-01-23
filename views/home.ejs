@@ -1,5 +1,5 @@
 <% layout('layouts/boilerplate') %>
-<h1>Welcome to the toilet selector</h1>
+<h1 class="title">Welcome to the toilet selector</h1>
 <div class="form">
     <form action="/" method="POST">
         <div class="select">
@@ -10,8 +10,8 @@
             </select>
         </div>
         <div class="select">
-            <label for="outlet">What is you outlet measurement:</label>
-            <input type="number" name="outlet" id="outlet" />
+            <label for="outlet">What is you outlet measurement (mm):</label>
+            <input type="number" name="outlet" id="outlet" required min="0" />
         </div>
         <button type="submit">Submit</button>
     </form>

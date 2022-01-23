@@ -21,7 +21,7 @@ module.exports.search = async (req, res) => {
         });
         res.render('toilet/show', { toilets });
     } else {
-        const toilets = await Toilets.find({ PTrapSetout: { $eq: 185 } });
+        const toilets = await Toilets.find({ PTrapSetout: { $eq: outlet } });
         res.render('toilet/show', { toilets });
     }
 };
