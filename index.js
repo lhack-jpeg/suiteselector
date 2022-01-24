@@ -5,7 +5,7 @@ if (process.env.NODE_ENV !== 'production') {
 const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
-const expressError = require('./Utilities/expressError');
+const expressError = require('./utilities/expressError');
 const ejsMate = require('ejs-mate');
 const mongoSanitize = require('express-mongo-sanitize');
 const basicRoutes = require('./routes/basicRoutes');
