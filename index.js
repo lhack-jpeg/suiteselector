@@ -1,3 +1,7 @@
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').config();
+}
+
 const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
@@ -14,7 +18,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(mongoSanitize());
 
-mongoose.connect('mongodb://localhost:27017/Toilet', {
+const dbURL = process.env.DBURL || 'mongodb://localhost:27017/Toilet';
+
+mongoose.connect(dbURL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
