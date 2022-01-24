@@ -34,6 +34,10 @@ db.once('open', () => {
 
 app.use('/', basicRoutes);
 
+app.get('/', (req, res) => {
+    res.render('home');
+});
+
 app.all('*', (res, req, next) => {
     next(new expressError('Page not found', 404));
 });
