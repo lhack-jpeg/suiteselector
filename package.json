@@ -1,19 +1,20 @@
 {
-  "name": "suite_selector",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "dotenv": "^14.2.0",
-    "ejs-mate": "^3.0.0",
-    "express": "^4.17.2",
-    "express-mongo-sanitize": "^2.1.0",
-    "mongoose": "^6.1.4"
-  }
+    "name": "suite_selector",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^14.2.0",
+        "ejs-mate": "^3.0.0",
+        "express": "^4.17.2",
+        "express-mongo-sanitize": "^2.1.0",
+        "mongoose": "^6.1.4"
+    }
 }
