@@ -137,9 +137,10 @@ a {
 
 .info {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
     box-sizing: border-box;
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
 }
 
 .info img {
