@@ -6,22 +6,38 @@ module.exports.home = (req, res) => {
 
 module.exports.search = async (req, res) => {
     console.log(req.body);
-    const { waste, outlet } = req.body;
+    const { waste, outlet, inletType, inletHeight, inletOffset } = req.body;
     if (waste === 'STrap') {
-        const toilets = await Toilets.find({
-            $or: [
-                { STrapSetout: outlet },
+        const toiletData = await Toilets.find({
+            $and: [
                 {
-                    $and: [
-                        { STrapMin: { $lte: outlet } },
-                        { STrapMax: { $gte: outlet } },
+                    $or: [
+                        { STrapSetout: outlet },
+                        {
+                            $and: [
+                                { STrapMin: { $lte: outlet } },
+                                { STrapMax: { $gte: outlet } },
+                            ],
+                        },
                     ],
                 },
+                { inletType: inletType },
             ],
         });
+        let toilets = toiletData;
+        for (let i = 0; i < toilets.length; i++) {
+            toilets[i].inletDistance = Math.floor(
+                ((toilets[i].waterPointHeight - inletHeight) ** 2 +
+                    (toilets[i].waterPointOffset - inletOffset) ** 2) **
+                    0.5
+            );
+        }
+        console.dir(toilets);
         res.render('toilet/show', { toilets });
     } else {
-        const toilets = await Toilets.find({ PTrapSetout: { $eq: outlet } });
+        const toilets = await Toilets.find({
+            $and: [{ PTrapSetout: { $eq: outlet } }, { inletType: inletType }],
+        });
         res.render('toilet/show', { toilets });
     }
 };
