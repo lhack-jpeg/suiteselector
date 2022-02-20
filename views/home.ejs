@@ -13,6 +13,50 @@
             <label for="outlet">What is your outlet measurement (mm):</label>
             <input type="number" name="outlet" id="outlet" required min="0" />
         </div>
+        <div class="select">
+            <p>What is your water inlet position:</p>
+            <div class="select">
+                <input
+                    type="radio"
+                    name="inletType"
+                    id="bottomInlet"
+                    value="bottomInlet"
+                    checked
+                />
+                <label for="bottomInlet">Bottom Inlet</label>
+                <input
+                    type="radio"
+                    name="inletType"
+                    id="backInlet"
+                    value="backInlet"
+                />
+                <label for="backInlet">Back Inlet</label>
+            </div>
+        </div>
+        <div class="select backInlet">
+            <label for="inletHeight"
+                >What is the height of your water point (mm)</label
+            >
+            <input
+                type="number"
+                name="waterPosition"
+                id="inletHeight"
+                disabled
+            />
+        </div>
+        <div class="select backInlet">
+            <label for="inletOffset"
+                >What is the offset of your water point (mm)</label
+            >
+            <input
+                type="number"
+                name="waterPosition"
+                id="inletOffset"
+                disabled
+            />
+        </div>
         <button type="submit">Submit</button>
     </form>
 </div>
+
+<script src="javascript/form.js"></script>
