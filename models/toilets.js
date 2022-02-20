@@ -11,6 +11,10 @@ const ToiletSchema = new Schema({
     STrapSetout: Number,
     STrapMin: Number,
     STrapMax: Number,
+    bottomInlet: Boolean,
+    backInlet: Boolean,
+    waterPointHeight: Number,
+    waterPointOffset: Number,
 });
 
 module.exports = mongoose.model('Toilet', ToiletSchema);
