@@ -27,6 +27,10 @@ const seedDB = async () => {
             STrapSetout: parseInt(toilet.STrapSetout) || null,
             STrapMin: parseInt(toilet.STrapMin) || null,
             STrapMax: parseInt(toilet.STrapMax) || null,
+            bottomInlet: toilet.bottomInlet || false,
+            backInlet: toilet.BackInlet || false,
+            waterPointHeight: parseInt(toilet.WaterPointHeight) || null,
+            waterPointOffset: parseInt(toilet.WaterPointOffset) || null,
         });
         await newToilet.save();
     }
