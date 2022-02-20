@@ -11,7 +11,7 @@
         STrapSetout: null,
         STrapMin: '150',
         STrapMax: '250',
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -27,7 +27,7 @@
         STrapSetout: null,
         STrapMin: '190',
         STrapMax: '240',
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -43,7 +43,7 @@
         STrapSetout: null,
         STrapMin: '95',
         STrapMax: '155',
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -59,7 +59,7 @@
         STrapSetout: null,
         STrapMin: null,
         STrapMax: null,
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -75,7 +75,7 @@
         STrapSetout: null,
         STrapMin: '190',
         STrapMax: '240',
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -91,7 +91,7 @@
         STrapSetout: '145',
         STrapMin: null,
         STrapMax: null,
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -107,7 +107,7 @@
         STrapSetout: null,
         STrapMin: null,
         STrapMax: null,
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -123,7 +123,7 @@
         STrapSetout: null,
         STrapMin: '125',
         STrapMax: '225',
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -139,7 +139,7 @@
         STrapSetout: '155',
         STrapMin: null,
         STrapMax: null,
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -155,7 +155,7 @@
         STrapSetout: null,
         STrapMin: '90',
         STrapMax: '190',
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -171,7 +171,7 @@
         STrapSetout: null,
         STrapMin: null,
         STrapMax: null,
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -187,7 +187,7 @@
         STrapSetout: null,
         STrapMin: '125',
         STrapMax: '225',
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -203,7 +203,7 @@
         STrapSetout: null,
         STrapMin: '140',
         STrapMax: '270',
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -219,7 +219,7 @@
         STrapSetout: null,
         STrapMin: '95',
         STrapMax: '190',
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -235,7 +235,7 @@
         STrapSetout: '140',
         STrapMin: null,
         STrapMax: null,
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -251,7 +251,7 @@
         STrapSetout: '140',
         STrapMin: null,
         STrapMax: null,
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -267,7 +267,7 @@
         STrapSetout: null,
         STrapMin: '135',
         STrapMax: '235',
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -283,7 +283,7 @@
         STrapSetout: null,
         STrapMin: null,
         STrapMax: null,
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -299,7 +299,7 @@
         STrapSetout: '155',
         STrapMin: null,
         STrapMax: null,
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -315,7 +315,7 @@
         STrapSetout: null,
         STrapMin: '155',
         STrapMax: '255',
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -331,7 +331,7 @@
         STrapSetout: null,
         STrapMin: '90',
         STrapMax: '140',
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -347,7 +347,7 @@
         STrapSetout: null,
         STrapMin: null,
         STrapMax: null,
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -363,7 +363,7 @@
         STrapSetout: null,
         STrapMin: null,
         STrapMax: null,
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -379,7 +379,7 @@
         STrapSetout: null,
         STrapMin: '170',
         STrapMax: '280',
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -395,7 +395,7 @@
         STrapSetout: null,
         STrapMin: '95',
         STrapMax: '190',
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -411,7 +411,7 @@
         STrapSetout: null,
         STrapMin: '60',
         STrapMax: '200',
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -427,7 +427,7 @@
         STrapSetout: '145',
         STrapMin: null,
         STrapMax: null,
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -443,7 +443,7 @@
         STrapSetout: '145',
         STrapMin: null,
         STrapMax: null,
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -458,7 +458,7 @@
         STrapSetout: null,
         STrapMin: null,
         STrapMax: null,
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -474,7 +474,7 @@
         STrapSetout: null,
         STrapMin: '170',
         STrapMax: '280',
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -490,7 +490,7 @@
         STrapSetout: null,
         STrapMin: '100',
         STrapMax: '200',
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -506,7 +506,7 @@
         STrapSetout: '145',
         STrapMin: null,
         STrapMax: null,
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
     {
@@ -522,7 +522,7 @@
         STrapSetout: null,
         STrapMin: '95',
         STrapMax: '185',
-        BottomInlet: true,
+        inletType: bottomInlet,
         _type: 'dict',
     },
 ];

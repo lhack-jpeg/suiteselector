@@ -14,7 +14,7 @@
         STrapMax: '140',
         WaterPointHeight: 700,
         WaterPointOffset: 125,
-        BackInlet: true,
+        inletType: backInlet,
         _type: 'dict',
     },
     {
@@ -32,7 +32,7 @@
         STrapMax: '200',
         WaterPointHeight: 788,
         WaterPointOffset: 125,
-        BackInlet: true,
+        inletType: backInlet,
         _type: 'dict',
     },
     {
@@ -50,7 +50,7 @@
         STrapMax: '190',
         WaterPointHeight: 800,
         WaterPointOffset: 80,
-        BackInlet: true,
+        inletType: backInlet,
         _type: 'dict',
     },
     {
@@ -68,7 +68,7 @@
         STrapMax: '185',
         WaterPointHeight: 785,
         WaterPointOffset: 80,
-        BackInlet: true,
+        inletType: backInlet,
         _type: 'dict',
     },
     {
@@ -86,7 +86,7 @@
         STrapMax: '200',
         WaterPointHeight: 750,
         WaterPointOffset: 65,
-        BackInlet: true,
+        inletType: backInlet,
         _type: 'dict',
     },
     {
@@ -104,7 +104,7 @@
         STrapMax: '245',
         WaterPointHeight: 700,
         WaterPointOffset: 100,
-        BackInlet: true,
+        inletType: backInlet,
         _type: 'dict',
     },
     {
@@ -122,7 +122,7 @@
         STrapMax: '225',
         WaterPointHeight: 760,
         WaterPointOffset: 100,
-        BackInlet: true,
+        inletType: backInlet,
         _type: 'dict',
     },
     {
@@ -140,7 +140,7 @@
         STrapMax: '165',
         WaterPointHeight: 720,
         WaterPointOffset: 100,
-        BackInlet: true,
+        inletType: backInlet,
         _type: 'dict',
     },
     {
@@ -158,7 +158,7 @@
         STrapMax: '155',
         WaterPointHeight: 700,
         WaterPointOffset: 90,
-        BackInlet: true,
+        inletType: backInlet,
         _type: 'dict',
     },
     {
@@ -176,7 +176,7 @@
         STrapMax: null,
         WaterPointHeight: 700,
         WaterPointOffset: 90,
-        BackInlet: true,
+        inletType: backInlet,
         _type: 'dict',
     },
     {
@@ -194,7 +194,7 @@
         STrapMax: '220',
         WaterPointHeight: 775,
         WaterPointOffset: 0,
-        BackInlet: true,
+        inletType: backInlet,
         _type: 'dict',
     },
     {
@@ -212,7 +212,7 @@
         STrapMax: '220',
         WaterPointHeight: 775,
         WaterPointOffset: 0,
-        BackInlet: true,
+        inletType: backInlet,
         _type: 'dict',
     },
     {
@@ -230,7 +230,7 @@
         STrapMax: '165',
         WaterPointHeight: 760,
         WaterPointOffset: 100,
-        BackInlet: true,
+        inletType: backInlet,
         _type: 'dict',
     },
     {
@@ -248,7 +248,7 @@
         STrapMax: '225',
         WaterPointHeight: 720,
         WaterPointOffset: 100,
-        BackInlet: true,
+        inletType: backInlet,
         _type: 'dict',
     },
     {
@@ -266,7 +266,7 @@
         STrapMax: '165',
         WaterPointHeight: 690,
         WaterPointOffset: 100,
-        BackInlet: true,
+        inletType: backInlet,
         _type: 'dict',
     },
     {
@@ -284,7 +284,7 @@
         STrapMax: '165',
         WaterPointHeight: 740,
         WaterPointOffset: 100,
-        BackInlet: true,
+        inletType: backInlet,
         _type: 'dict',
     },
     {
@@ -302,7 +302,7 @@
         STrapMax: '185',
         WaterPointHeight: 785,
         WaterPointOffset: 80,
-        BackInlet: true,
+        inletType: backInlet,
         _type: 'dict',
     },
     {
@@ -320,7 +320,7 @@
         STrapMax: '190',
         WaterPointHeight: 800,
         WaterPointOffset: 80,
-        BackInlet: true,
+        inletType: backInlet,
         _type: 'dict',
     },
 ];
