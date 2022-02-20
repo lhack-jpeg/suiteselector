@@ -7,3 +7,7 @@
 # To scrape the data, I used python and scrapy to go over the reece website.
 
 # The web app itself was build using javascript and express.
+
+# This website takes the input of the form and display what toilets could suit the users current layout
+
+# The version can be found here: https://suiteselector.herokuapp.com/
