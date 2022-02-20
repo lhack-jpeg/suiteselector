@@ -16,6 +16,11 @@
             <p>S Trap Min Setout: <%= toilet.STrapMin %>mm</p>
             <% } else { %>
             <p>S Trap Set Out: <%= toilet.STrapSetout %>mm</p>
+            <%}%> <% if (toilet.inletType === 'backInlet') { %>
+            <p>Water Point Inlet Height <%= toilet.waterPointHeight %>mm</p>
+            <p>Water Point Offset <%= toilet.waterPointOffset %>mm</p>
+            <% } else { %>
+            <p>Bottom Inlet</p>
             <%}%>
             <div class="info-links">
                 <h3>Product Info</h3>
