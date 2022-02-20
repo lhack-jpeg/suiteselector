@@ -14,7 +14,7 @@ module.exports = [
         STrapMax: '140',
         WaterPointHeight: 700,
         WaterPointOffset: 125,
-        inletType: backInlet,
+        inletType: 'backInlet',
         _type: 'dict',
     },
     {
@@ -32,7 +32,7 @@ module.exports = [
         STrapMax: '200',
         WaterPointHeight: 788,
         WaterPointOffset: 125,
-        inletType: backInlet,
+        inletType: 'backInlet',
         _type: 'dict',
     },
     {
@@ -50,7 +50,7 @@ module.exports = [
         STrapMax: '190',
         WaterPointHeight: 800,
         WaterPointOffset: 80,
-        inletType: backInlet,
+        inletType: 'backInlet',
         _type: 'dict',
     },
     {
@@ -68,7 +68,7 @@ module.exports = [
         STrapMax: '185',
         WaterPointHeight: 785,
         WaterPointOffset: 80,
-        inletType: backInlet,
+        inletType: 'backInlet',
         _type: 'dict',
     },
     {
@@ -86,7 +86,7 @@ module.exports = [
         STrapMax: '200',
         WaterPointHeight: 750,
         WaterPointOffset: 65,
-        inletType: backInlet,
+        inletType: 'backInlet',
         _type: 'dict',
     },
     {
@@ -104,7 +104,7 @@ module.exports = [
         STrapMax: '245',
         WaterPointHeight: 700,
         WaterPointOffset: 100,
-        inletType: backInlet,
+        inletType: 'backInlet',
         _type: 'dict',
     },
     {
@@ -122,7 +122,7 @@ module.exports = [
         STrapMax: '225',
         WaterPointHeight: 760,
         WaterPointOffset: 100,
-        inletType: backInlet,
+        inletType: 'backInlet',
         _type: 'dict',
     },
     {
@@ -140,7 +140,7 @@ module.exports = [
         STrapMax: '165',
         WaterPointHeight: 720,
         WaterPointOffset: 100,
-        inletType: backInlet,
+        inletType: 'backInlet',
         _type: 'dict',
     },
     {
@@ -158,7 +158,7 @@ module.exports = [
         STrapMax: '155',
         WaterPointHeight: 700,
         WaterPointOffset: 90,
-        inletType: backInlet,
+        inletType: 'backInlet',
         _type: 'dict',
     },
     {
@@ -176,7 +176,7 @@ module.exports = [
         STrapMax: null,
         WaterPointHeight: 700,
         WaterPointOffset: 90,
-        inletType: backInlet,
+        inletType: 'backInlet',
         _type: 'dict',
     },
     {
@@ -194,7 +194,7 @@ module.exports = [
         STrapMax: '220',
         WaterPointHeight: 775,
         WaterPointOffset: 0,
-        inletType: backInlet,
+        inletType: 'backInlet',
         _type: 'dict',
     },
     {
@@ -212,7 +212,7 @@ module.exports = [
         STrapMax: '220',
         WaterPointHeight: 775,
         WaterPointOffset: 0,
-        inletType: backInlet,
+        inletType: 'backInlet',
         _type: 'dict',
     },
     {
@@ -230,7 +230,7 @@ module.exports = [
         STrapMax: '165',
         WaterPointHeight: 760,
         WaterPointOffset: 100,
-        inletType: backInlet,
+        inletType: 'backInlet',
         _type: 'dict',
     },
     {
@@ -248,7 +248,7 @@ module.exports = [
         STrapMax: '225',
         WaterPointHeight: 720,
         WaterPointOffset: 100,
-        inletType: backInlet,
+        inletType: 'backInlet',
         _type: 'dict',
     },
     {
@@ -266,7 +266,7 @@ module.exports = [
         STrapMax: '165',
         WaterPointHeight: 690,
         WaterPointOffset: 100,
-        inletType: backInlet,
+        inletType: 'backInlet',
         _type: 'dict',
     },
     {
@@ -284,7 +284,7 @@ module.exports = [
         STrapMax: '165',
         WaterPointHeight: 740,
         WaterPointOffset: 100,
-        inletType: backInlet,
+        inletType: 'backInlet',
         _type: 'dict',
     },
     {
@@ -302,7 +302,7 @@ module.exports = [
         STrapMax: '185',
         WaterPointHeight: 785,
         WaterPointOffset: 80,
-        inletType: backInlet,
+        inletType: 'backInlet',
         _type: 'dict',
     },
     {
@@ -320,7 +320,7 @@ module.exports = [
         STrapMax: '190',
         WaterPointHeight: 800,
         WaterPointOffset: 80,
-        inletType: backInlet,
+        inletType: 'backInlet',
         _type: 'dict',
     },
     {
@@ -335,7 +335,7 @@ module.exports = [
         STrapSetout: null,
         STrapMin: '150',
         STrapMax: '250',
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -351,7 +351,7 @@ module.exports = [
         STrapSetout: null,
         STrapMin: '190',
         STrapMax: '240',
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -367,7 +367,7 @@ module.exports = [
         STrapSetout: null,
         STrapMin: '95',
         STrapMax: '155',
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -383,7 +383,7 @@ module.exports = [
         STrapSetout: null,
         STrapMin: null,
         STrapMax: null,
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -399,7 +399,7 @@ module.exports = [
         STrapSetout: null,
         STrapMin: '190',
         STrapMax: '240',
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -415,7 +415,7 @@ module.exports = [
         STrapSetout: '145',
         STrapMin: null,
         STrapMax: null,
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -431,7 +431,7 @@ module.exports = [
         STrapSetout: null,
         STrapMin: null,
         STrapMax: null,
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -447,7 +447,7 @@ module.exports = [
         STrapSetout: null,
         STrapMin: '125',
         STrapMax: '225',
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -463,7 +463,7 @@ module.exports = [
         STrapSetout: '155',
         STrapMin: null,
         STrapMax: null,
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -479,7 +479,7 @@ module.exports = [
         STrapSetout: null,
         STrapMin: '90',
         STrapMax: '190',
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -495,7 +495,7 @@ module.exports = [
         STrapSetout: null,
         STrapMin: null,
         STrapMax: null,
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -511,7 +511,7 @@ module.exports = [
         STrapSetout: null,
         STrapMin: '125',
         STrapMax: '225',
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -527,7 +527,7 @@ module.exports = [
         STrapSetout: null,
         STrapMin: '140',
         STrapMax: '270',
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -543,7 +543,7 @@ module.exports = [
         STrapSetout: null,
         STrapMin: '95',
         STrapMax: '190',
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -559,7 +559,7 @@ module.exports = [
         STrapSetout: '140',
         STrapMin: null,
         STrapMax: null,
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -575,7 +575,7 @@ module.exports = [
         STrapSetout: '140',
         STrapMin: null,
         STrapMax: null,
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -591,7 +591,7 @@ module.exports = [
         STrapSetout: null,
         STrapMin: '135',
         STrapMax: '235',
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -607,7 +607,7 @@ module.exports = [
         STrapSetout: null,
         STrapMin: null,
         STrapMax: null,
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -623,7 +623,7 @@ module.exports = [
         STrapSetout: '155',
         STrapMin: null,
         STrapMax: null,
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -639,7 +639,7 @@ module.exports = [
         STrapSetout: null,
         STrapMin: '155',
         STrapMax: '255',
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -655,7 +655,7 @@ module.exports = [
         STrapSetout: null,
         STrapMin: '90',
         STrapMax: '140',
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -671,7 +671,7 @@ module.exports = [
         STrapSetout: null,
         STrapMin: null,
         STrapMax: null,
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -687,7 +687,7 @@ module.exports = [
         STrapSetout: null,
         STrapMin: null,
         STrapMax: null,
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -703,7 +703,7 @@ module.exports = [
         STrapSetout: null,
         STrapMin: '170',
         STrapMax: '280',
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -719,7 +719,7 @@ module.exports = [
         STrapSetout: null,
         STrapMin: '95',
         STrapMax: '190',
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -735,7 +735,7 @@ module.exports = [
         STrapSetout: null,
         STrapMin: '60',
         STrapMax: '200',
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -751,7 +751,7 @@ module.exports = [
         STrapSetout: '145',
         STrapMin: null,
         STrapMax: null,
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -767,7 +767,7 @@ module.exports = [
         STrapSetout: '145',
         STrapMin: null,
         STrapMax: null,
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -782,7 +782,7 @@ module.exports = [
         STrapSetout: null,
         STrapMin: null,
         STrapMax: null,
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -798,7 +798,7 @@ module.exports = [
         STrapSetout: null,
         STrapMin: '170',
         STrapMax: '280',
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -814,7 +814,7 @@ module.exports = [
         STrapSetout: null,
         STrapMin: '100',
         STrapMax: '200',
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -830,7 +830,7 @@ module.exports = [
         STrapSetout: '145',
         STrapMin: null,
         STrapMax: null,
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
     {
@@ -846,7 +846,7 @@ module.exports = [
         STrapSetout: null,
         STrapMin: '95',
         STrapMax: '185',
-        inletType: bottomInlet,
+        inletType: 'bottomInlet',
         _type: 'dict',
     },
 ];
