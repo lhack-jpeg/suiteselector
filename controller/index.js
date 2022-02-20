@@ -38,3 +38,10 @@ module.exports.showOne = async (req, res) => {
     console.log(toilet);
     res.render('toilet/showOne', { toilet });
 };
+
+module.exports.showInlet = async (req, res) => {
+    const { inletType } = req.params;
+    console.log(inletType);
+    const toilets = await Toilets.find({ inletType: inletType });
+    res.render('toilet/index', { toilets });
+};

@@ -7,6 +7,8 @@ router.route('/').get(controller.home).post(wrapAsync(controller.search));
 
 router.route('/show/:code').get(wrapAsync(controller.showOne));
 
+router.route('/show/:inletType').get(wrapAsync(controller.showInlet));
+
 router.route('/show').get(wrapAsync(controller.show));
 
 module.exports = router;
