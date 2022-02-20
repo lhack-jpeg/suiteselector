@@ -1,5 +1,10 @@
 const Toilets = require('../models/toilets');
 
+function distanceCalc(a, b, x, y) {
+    let distance = Math.floor(((a - x) ** 2 + (b - y) ** 2) ** 0.5);
+    return distance;
+}
+
 module.exports.home = (req, res) => {
     res.render('home');
 };
@@ -26,18 +31,29 @@ module.exports.search = async (req, res) => {
         });
         let toilets = toiletData;
         for (let i = 0; i < toilets.length; i++) {
-            toilets[i].inletDistance = Math.floor(
-                ((toilets[i].waterPointHeight - inletHeight) ** 2 +
-                    (toilets[i].waterPointOffset - inletOffset) ** 2) **
-                    0.5
+            toilets[i].inletDistance = 0;
+            toilets[i].inletDistance = distanceCalc(
+                toilets[i].waterPointHeight,
+                toilets[i].waterPointOffset,
+                inletHeight,
+                inletOffset
             );
         }
-        console.dir(toilets);
         res.render('toilet/show', { toilets });
     } else {
-        const toilets = await Toilets.find({
+        const toiletData = await Toilets.find({
             $and: [{ PTrapSetout: { $eq: outlet } }, { inletType: inletType }],
         });
+        let toilets = toiletData;
+        for (let i = 0; i < toilets.length; i++) {
+            toilets[i].inletDistance = 0;
+            toilets[i].inletDistance = distanceCalc(
+                toilets[i].waterPointHeight,
+                toilets[i].waterPointOffset,
+                inletHeight,
+                inletOffset
+            );
+        }
         res.render('toilet/show', { toilets });
     }
 };
