@@ -8,6 +8,8 @@ bottomInlet.addEventListener('click', function () {
     backInlet.checked = false;
     inletHieight.disabled = true;
     inletOffset.disabled = true;
+    inletHieight.required = false;
+    inletOffset.required = false;
 });
 
 backInlet.addEventListener('click', () => {
@@ -15,4 +17,6 @@ backInlet.addEventListener('click', () => {
     bottomInlet.checked = false;
     inletHieight.disabled = false;
     inletOffset.disabled = false;
+    inletHieight.required = true;
+    inletOffset.required = true;
 });
