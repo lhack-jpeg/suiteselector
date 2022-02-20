@@ -11,8 +11,7 @@ const ToiletSchema = new Schema({
     STrapSetout: Number,
     STrapMin: Number,
     STrapMax: Number,
-    bottomInlet: Boolean,
-    backInlet: Boolean,
+    inletType: String,
     waterPointHeight: Number,
     waterPointOffset: Number,
 });
