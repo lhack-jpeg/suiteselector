@@ -1,11 +1,38 @@
-<nav class="navbar">
-    <div class="logo"><a href="/">Suite Selector</a></div>
-    <ul class="nav-links">
-        <div class="menu">
-            <li><a href="/">Home</a></li>
-            <li><a href="/show">Show All</a></li>
-            <li><a href="/show/toilets/backInlet">Back Inlet</a></li>
-            <li><a href="/show/toilets/bottomInlet">Bottom Inlet</a></li>
+<header>
+    <nav class="navbar">
+        <div class="logo"><a href="/">Suite Selector</a></div>
+        <div class="nav-logo">
+            <button class="toggle-button">
+                <span class="toggle-button__bar"></span
+                ><span class="toggle-button__bar"></span
+                ><span class="toggle-button__bar"></span>
+            </button>
         </div>
+        <ul class="nav-links">
+            <div class="main-nav">
+                <ul class="main-nav__nav-items">
+                    <li class="main-nav__item"><a href="/">Home</a></li>
+                    <li class="main-nav__item"><a href="/show">Show All</a></li>
+                    <li class="main-nav__item">
+                        <a href="/show/toilets/backInlet">Back Inlet</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="/show/toilets/bottomInlet">Bottom Inlet</a>
+                    </li>
+                </ul>
+            </div>
+        </ul>
+    </nav>
+</header>
+<nav class="mobile-nav">
+    <ul class="mobile-nav__items">
+        <li class="main-nav__item"><a href="/">Home</a></li>
+        <li class="main-nav__item"><a href="/show">Show All</a></li>
+        <li class="main-nav__item">
+            <a href="/show/toilets/backInlet">Back Inlet</a>
+        </li>
+        <li class="main-nav__item">
+            <a href="/show/toilets/bottomInlet">Bottom Inlet</a>
+        </li>
     </ul>
 </nav>
