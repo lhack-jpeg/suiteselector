@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main-header {
+    background-color: #1f70f2;
+    padding: 0.5rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    box-sizing: border-box;
+    z-index: 3;
+    display: --webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+
+.logo {
+    display: flex;
+    a {
+        padding-left: 0.5rem;
+        text-decoration: none;
+        color: white;
+        font: {
+            size: 2rem;
+        }
+        @media (min-width: 40rem) {
+            padding-left: 0;
+        }
+    }
+}
+
+.toggle-button {
+    width: 3rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0;
+    vertical-align: middle;
+
+    @media (min-width: 40rem) {
+        display: none;
+    }
+}
+
+.toggle-button:focus {
+    outline: none;
+}
+
+.toggle-button__bar {
+    width: 100%;
+    height: 0.2rem;
+    background: black;
+    display: block;
+    margin: 0.6rem 0;
+}
+
+.main-nav {
+    display: none;
+
+    @media (min-width: 40rem) {
+        display: flex;
+    }
+}
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 80%;
+    height: 100vh;
+}
+
+.mobile-nav__items {
+    width: 90%;
+    height: 100%;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-nav__item {
+    padding-left: 0.5rem;
+    padding-bottom: 0.3rem;
+    a {
+        text-decoration: none;
+        color: #1f70f2;
+        padding-bottom: 0.5rem;
+        font-size: 1.5rem;
+    }
+}
+
+main {
+    padding-top: 4rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.form {
+    padding: 1rem;
+
+    @media (min-width: 40rem) {
+        margin: auto;
+        width: 25rem;
+    }
+}
+
+.select {
+    padding: 0.5rem 0;
+
+    p {
+        display: block;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    input {
+        display: block;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    label {
+        display: block;
+        width: 100%;
+        margin-top: 1rem;
+        white-space: nowrap;
+        font: {
+            weight: bold;
+        }
+    }
+
+    select {
+        display: block;
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+.inlet-choice {
+    input {
+        width: 50%;
+        display: inline;
+    }
+
+    label {
+        width: 50%;
+        display: inline;
+    }
+}
