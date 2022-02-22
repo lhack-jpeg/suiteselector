@@ -1,13 +1,13 @@
 <% layout('layouts/boilerplate') %>
-<h1>Toilets that can suit</h1>
+<h1 class="title">Toilets that can suit</h1>
 <div class="container">
     <% if (toilets.length > 0) { %> <% for( let toilet of toilets) { %>
     <div class="card">
         <article class="card-content">
-            <h3><%= toilet.name%></h3>
-            <img src="<%= toilet.image %> " alt="" />
-            <p><%= toilet.inletDistance %></p>
-            <a href="/show/<%=toilet.code%>">See Details</a>
+            <h3 class="card-title"><%= toilet.name%></h3>
+            <img class="card-image" src="<%= toilet.image %> " alt="" />
+            <p class="card-distance"><%= toilet.inletDistance %></p>
+            <a class="card-button" href="/show/<%=toilet.code%>">See Details</a>
         </article>
     </div>
     <% } %> <% } else { %>

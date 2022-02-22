@@ -1,11 +1,11 @@
 <% layout('layouts/boilerplate') %>
-<h1>All Toilets</h1>
+<h1 class="title">All Toilets</h1>
 <div class="container">
     <% for (let toilet of toilets) { %>
     <div class="card">
-        <h3><%= toilet.name%></h3>
-        <img src="<%= toilet.image%>" alt="" />
-        <a href="/show/<%=toilet.code%>">See toilet</a>
+        <h3 class="card-title"><%= toilet.name%></h3>
+        <img class="card-image" src="<%= toilet.image%>" alt="" />
+        <a class="card-button" href="/show/<%=toilet.code%>">See toilet</a>
     </div>
     <% } %>
 </div>
