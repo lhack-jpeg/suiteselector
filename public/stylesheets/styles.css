@@ -274,6 +274,13 @@ main {
   box-shadow: 2px 2px 2px #ffd383;
 }
 
+.no-result-link {
+  padding-top: 4rem;
+  text-decoration: none;
+  color: #1f70f2;
+  text-align: center;
+}
+
 .toilet {
   max-width: 95vw;
   padding: 0.5rem;
