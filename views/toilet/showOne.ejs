@@ -1,15 +1,20 @@
 <% layout('layouts/boilerplate') %>
 
-<div class="info">
+<div class="toilet">
     <div>
-        <img id="toilet_image" src="<%=toilet.image%>" alt="" />
+        <img
+            class="toilet__image"
+            id="toilet_image"
+            src="<%=toilet.image%>"
+            alt=""
+        />
     </div>
 
-    <div>
-        <h2><%= toilet.name %></h2>
+    <div class="toilet__info">
+        <h2 class="toilet__info-title"><%= toilet.name %></h2>
         <% if (toilet.PTrapSetout){ %>
-        <div class="specs">
-            <h3>Toilet Setout</h3>
+        <div class="toilet__specs">
+            <h3 class="toilet__specs-title">Toilet Setout:</h3>
             <p>P Trap Set Out: <%=toilet.PTrapSetout%>mm</p>
             <%}%> <% if (toilet.STrapMin) { %>
             <p>S Trap Max Setout: <%= toilet.STrapMax %>mm</p>
@@ -23,10 +28,16 @@
             <p>Bottom Inlet</p>
             <%}%>
             <div class="info-links">
-                <h3>Product Info</h3>
-                <p>See product's webpage <a href="<%= toilet.url%>">here</a></p>
-                <p>See Spec Sheet <a href="<%= toilet.spec %> ">here</a></p>
+                <h3 class="toilet__specs-title">Product Info</h3>
                 <p>Product Code <%= toilet.code %></p>
+                <p>
+                    See product's webpage
+                    <a class="info-link" href="<%= toilet.url%>">here</a>
+                </p>
+                <p>
+                    See Spec Sheet
+                    <a class="info-link" href="<%= toilet.spec %> ">here</a>
+                </p>
             </div>
         </div>
     </div>

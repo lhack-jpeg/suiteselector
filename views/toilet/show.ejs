@@ -6,7 +6,9 @@
         <article class="card-content">
             <h3 class="card-title"><%= toilet.name%></h3>
             <img class="card-image" src="<%= toilet.image %> " alt="" />
-            <p class="card-distance"><%= toilet.inletDistance %></p>
+            <p class="card-distance">
+                Distance to waterpoint: <%= toilet.inletDistance %>
+            </p>
             <a class="card-button" href="/show/<%=toilet.code%>">See Details</a>
         </article>
     </div>
