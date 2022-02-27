@@ -184,6 +184,16 @@ main {
         margin-top: 1rem;
     }
 
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type='number'] {
+        -moz-appearance: textfield;
+    }
+
     label {
         display: block;
         width: 100%;

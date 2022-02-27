@@ -186,6 +186,14 @@ main {
   width: 100%;
   margin-top: 1rem;
 }
+.select input::-webkit-outer-spin-button,
+.select input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.select input[type=number] {
+  -moz-appearance: textfield;
+}
 .select label {
   display: block;
   width: 100%;
