@@ -9,6 +9,7 @@ module.exports.home = (req, res) => {
     res.render('home');
 };
 
+// filter toilets
 module.exports.search = async (req, res) => {
     console.log(req.body);
     const { waste, outlet, inletType, inletHeight, inletOffset } = req.body;
@@ -91,11 +92,13 @@ module.exports.search = async (req, res) => {
     }
 };
 
+// show all toilets
 module.exports.show = async (req, res) => {
     const toilets = await Toilets.find({});
     res.render('toilet/index', { toilets });
 };
 
+// show one toilet function
 module.exports.showOne = async (req, res) => {
     const { code } = req.params;
     console.log(code);
@@ -104,6 +107,7 @@ module.exports.showOne = async (req, res) => {
     res.render('toilet/showOne', { toilet });
 };
 
+// Show certain inlets
 module.exports.showInlet = async (req, res) => {
     const { inletType } = req.params;
     console.log(inletType);

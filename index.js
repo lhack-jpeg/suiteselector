@@ -1,7 +1,7 @@
 if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config();
 }
-
+// imports
 const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
@@ -9,7 +9,7 @@ const expressError = require('./utilities/expressError');
 const ejsMate = require('ejs-mate');
 const mongoSanitize = require('express-mongo-sanitize');
 const basicRoutes = require('./routes/basicRoutes');
-
+// app settings
 const app = express();
 app.engine('ejs', ejsMate);
 app.set('view engine', 'ejs');
@@ -18,6 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(mongoSanitize());
 
+// DB connections
 const dbURL = process.env.DBURL || 'mongodb://localhost:27017/Toilet';
 
 mongoose.connect(dbURL, {
@@ -32,6 +33,7 @@ db.once('open', () => {
     console.log('Database connected');
 });
 
+// app routing
 app.use('/', basicRoutes);
 
 app.get('/', (req, res) => {

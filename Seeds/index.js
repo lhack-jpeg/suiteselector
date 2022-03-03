@@ -14,6 +14,7 @@ db.once('open', () => {
     console.log('Database connected');
 });
 
+// function to load toilets in database
 const seedDB = async () => {
     await Toilet.deleteMany();
     for (const toilet of toiletData) {
@@ -38,6 +39,3 @@ const seedDB = async () => {
 seedDB().then(() => {
     mongoose.connection.close();
 });
-
-// Query for finding wastes that fit out a measurement
-// db.toilets.find({$and:[{STrapMin:{$lte:VALUE}},{STrapMax:{$gte:VALUE}}]})

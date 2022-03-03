@@ -3,6 +3,7 @@ const backInlet = document.querySelector('#backInlet');
 const inletHieight = document.querySelector('#inletHeight');
 const inletOffset = document.querySelector('#inletOffset');
 
+// Disable responsiveness on form
 bottomInlet.addEventListener('click', function () {
     this.checked = true;
     backInlet.checked = false;
@@ -12,6 +13,7 @@ bottomInlet.addEventListener('click', function () {
     inletOffset.required = false;
 });
 
+// Enabled repsonsiveness on form
 backInlet.addEventListener('click', () => {
     this.checked = true;
     bottomInlet.checked = false;
