@@ -1,4 +1,4 @@
-# suiteSelector
+# The Suite Selector
 
 # This project is a simple web app for users to enter the toilets set out measurements.
 
