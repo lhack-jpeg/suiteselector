@@ -110,11 +110,12 @@ body {
   margin-bottom: 0.2rem;
   padding: 0.4rem;
   background-color: #1f70f2;
+  border-radius: 2px;
   transition: background-color 200ms ease-in;
 }
 .main-nav__item a:hover {
   border-bottom: 2px solid white;
-  background-color: #4f8ff5;
+  background-color: #679ef6;
 }
 
 .mobile-nav {
@@ -126,6 +127,7 @@ body {
   background: #fff;
   width: 80%;
   height: 100vh;
+  animation: moveToRight 200ms ease-in-out;
 }
 
 .mobile-nav__items {
@@ -346,6 +348,15 @@ main {
 }
 .info-link:active {
   color: #1f70f2;
+}
+
+@keyframes moveToRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

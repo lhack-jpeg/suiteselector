@@ -108,10 +108,11 @@ body {
         margin-bottom: 0.2rem;
         padding: 0.4rem;
         background-color: map-get($colors, main);
+        border-radius: 2px;
         transition: background-color 200ms ease-in;
         &:hover {
             border-bottom: 2px solid white;
-            background-color: lighten((map-get($colors, main)), 10%);
+            background-color: lighten((map-get($colors, main)), 15%);
         }
     }
 }
@@ -125,6 +126,7 @@ body {
     background: #fff;
     width: 80%;
     height: 100vh;
+    animation: moveToRight 200ms ease-in-out;
 }
 
 .mobile-nav__items {
@@ -354,5 +356,15 @@ main {
 
     &:active {
         color: map-get($colors, main);
+    }
+}
+
+@keyframes moveToRight {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
     }
 }
