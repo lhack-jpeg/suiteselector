@@ -1,4 +1,4 @@
-const Toilets = require('../models/toilets');
+const Toilets = require("../models/toilets");
 
 function distanceCalc(a, b, x, y) {
     let distance = Math.floor(((a - x) ** 2 + (b - y) ** 2) ** 0.5);
@@ -6,15 +6,16 @@ function distanceCalc(a, b, x, y) {
 }
 
 module.exports.home = (req, res) => {
-    res.render('home');
+    console.log("home");
+    res.send("home");
 };
 
 // filter toilets
 module.exports.search = async (req, res) => {
     console.log(req.body);
     const { waste, outlet, inletType, inletHeight, inletOffset } = req.body;
-    if (inletType === 'backInlet') {
-        if (waste === 'STrap') {
+    if (inletType === "backInlet") {
+        if (waste === "STrap") {
             const toiletData = await Toilets.find({
                 $and: [
                     {
@@ -41,7 +42,7 @@ module.exports.search = async (req, res) => {
                     inletOffset
                 );
             }
-            res.render('toilet/show', { toilets });
+            res.send(toilets);
         } else {
             const toiletData = await Toilets.find({
                 $and: [
@@ -59,10 +60,10 @@ module.exports.search = async (req, res) => {
                     inletOffset
                 );
             }
-            res.render('toilet/show', { toilets });
+            res.send(toilets);
         }
     } else {
-        if (waste === 'STrap') {
+        if (waste === "STrap") {
             const toilets = await Toilets.find({
                 $and: [
                     {
@@ -79,7 +80,7 @@ module.exports.search = async (req, res) => {
                     { inletType: inletType },
                 ],
             });
-            res.render('toilet/show', { toilets });
+            res.send(toilets);
         } else {
             const toilets = await Toilets.find({
                 $and: [
@@ -87,15 +88,16 @@ module.exports.search = async (req, res) => {
                     { inletType: inletType },
                 ],
             });
-            res.render('toilet/show', { toilets });
+            res.send(toilets);
         }
     }
 };
 
 // show all toilets
 module.exports.show = async (req, res) => {
+    console.log("Inside show");
     const toilets = await Toilets.find({});
-    res.render('toilet/index', { toilets });
+    res.send({ toilets });
 };
 
 // show one toilet function
@@ -104,7 +106,7 @@ module.exports.showOne = async (req, res) => {
     console.log(code);
     const toilet = await Toilets.findOne({ code: code });
     console.log(toilet);
-    res.render('toilet/showOne', { toilet });
+    res.send(toilet);
 };
 
 // Show certain inlets
@@ -112,5 +114,5 @@ module.exports.showInlet = async (req, res) => {
     const { inletType } = req.params;
     console.log(inletType);
     const toilets = await Toilets.find({ inletType: inletType });
-    res.render('toilet/index', { toilets });
+    res.send(toilets);
 };
