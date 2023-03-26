@@ -1,5 +1,6 @@
-import React, { Component } from "react";
-import ToiletCard from "./ToiletCard";
+import React, { Component } from 'react';
+import ToiletCard from './ToiletCard';
+import './ToiletBoard.css';
 
 export default class ToiletBoard extends Component {
     constructor(props) {
@@ -18,7 +19,7 @@ export default class ToiletBoard extends Component {
     }
 
     callBackEnd = async () => {
-        const response = await fetch("http://localhost:4000/show");
+        const response = await fetch('http://localhost:4000/show');
         const body = await response.json();
 
         return body;
@@ -34,9 +35,9 @@ export default class ToiletBoard extends Component {
             ></ToiletCard>
         ));
         return (
-            <div>
+            <div className='ToiletBoard'>
                 <h4>ALL THE TOILETS</h4>
-                {toilets}
+                <div className='ToiletDisplay'>{toilets}</div>
             </div>
         );
     }
