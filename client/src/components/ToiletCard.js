@@ -6,7 +6,7 @@ export default function ToiletCard({ img, name, code }) {
         <div>
             <img src={img} alt={name} />
             <h4>{name}</h4>
-            <Link to={`/show/${code}}`}>View Toilet</Link>
+            <Link to={`/show/${code}`}>View Toilet</Link>
         </div>
     );
 }
