@@ -1,0 +1,19 @@
+.ToiletBoard {
+    display: flex;
+    flex-direction: column;
+}
+
+.ToiletDisplay {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    justify-items: center;
+}
+
+@media (min-width: 40rem) {
+    .ToiletDisplay {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
