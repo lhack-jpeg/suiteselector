@@ -32,13 +32,13 @@ export default function ToiletForm() {
             </div>
             <div>
                 <p>What is your water inlet position:</p>
-                <div class="select inlet-choice">
+                <div className="select inlet-choice">
                     <input
                         type="radio"
                         name="inletType"
                         id="bottomInlet"
                         value="bottomInlet"
-                        checked
+                        defaultChecked
                     />
                     <label htmlFor="bottomInlet">Bottom Inlet</label>
                     <input
