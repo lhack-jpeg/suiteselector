@@ -1,16 +1,25 @@
 import React from "react";
-import { Form, useSubmit } from "react-router-dom";
+import { Form } from "react-router-dom";
 
-export default function ToiletForm() {
-    let submit = useSubmit();
+export async function action({ request, parmas }) {
+    const formData = await request.formData();
+    console.log("FormData", { formData });
+    const searchSpecs = Object.fromEntries(formData);
+    console.log("search specs", { searchSpecs });
+    const response = await fetch("http://localhost:4000", {
+        method: "POST",
+        mode: "cors",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(searchSpecs),
+    });
+    return response.json();
+}
+
+export function ToiletForm() {
     return (
-        <Form
-            method="POST"
-            action="/"
-            onChange={(evnt) => {
-                submit(evnt);
-            }}
-        >
+        <Form method="POST" action="/">
             <div>
                 <label htmlFor="wasteType">Select your waste</label>
                 <select id="wasteType" name="waste">
