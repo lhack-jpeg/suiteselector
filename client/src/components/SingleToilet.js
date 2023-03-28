@@ -15,15 +15,33 @@ export function SingleToilet() {
     return (
         <div>
             <h4>{toiletInfo.name}</h4>
-            {toiletInfo.PTrapSetOut ? (
-                <p>
-                    <b>P Trap SetOut</b>: {toiletInfo.PTrapSetOut}
-                </p>
-            ) : (
-                ""
-            )}
+            <SingleToiletSpecDisplay ToiletDataObj={toiletInfo} />
             <img src={toiletInfo.image} />
             <Link to={toiletInfo.spec}>Get specs</Link>
         </div>
     );
+}
+
+// @ SingleToiletSpecDisplay
+// @ ToiletDataObj: Data obj of a single toilet
+// filters out the keys that contains values
+// Generates an unordered list of the specs
+function SingleToiletSpecDisplay({ ToiletDataObj }) {
+    let toiletSpecOptions = [
+        "PTrapSetout",
+        "STrapMin",
+        "STrapMax",
+        "STrapSetout",
+        "waterPointHeight",
+        "waterPointOffset",
+    ];
+    let toiletSpecs = toiletSpecOptions.filter(
+        (key) => ToiletDataObj.hasOwnProperty(key) && ToiletDataObj[key]
+    );
+    let toiletSpecDisplay = toiletSpecs.map((key) => (
+        <li>
+            <b>{key}</b>: {ToiletDataObj[key]}
+        </li>
+    ));
+    return <ul>{toiletSpecDisplay}</ul>;
 }
