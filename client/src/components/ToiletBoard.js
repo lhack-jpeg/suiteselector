@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import ToiletCard from "./ToiletCard";
+import "./ToiletBoard.css";
 
 export function ToiletBoard() {
     const toiletsLoaded = useLoaderData();
@@ -24,9 +25,9 @@ export function ToiletBoard() {
           )));
 
     return (
-        <div>
+        <div className="ToiletBoard">
             <h4>Toilets</h4>
-            {toiletArray}
+            <div className="ToiletDisplay">{toiletArray}</div>
         </div>
     );
 }

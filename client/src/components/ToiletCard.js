@@ -7,8 +7,9 @@ export default function ToiletCard({ img, name, code }) {
         <div className="ToiletCard">
             <h4 className="ToiletCard__title">{name}</h4>
             <img src={img} alt={name} />
-            <h4>{name}</h4>
-            <Link to={`/show/${code}`}>View Toilet</Link>
+            <Link to={`/show/${code}`} className="ToiletCard__button">
+                View Toilet
+            </Link>
         </div>
     );
 }
