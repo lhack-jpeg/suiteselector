@@ -1,8 +1,15 @@
 import { createBrowserRouter } from "react-router-dom";
 import ErrorPage from "./components/ErrorPage";
 import { ToiletBoard, loader as ToiletLoader } from "./components/ToiletBoard";
+import {
+    ToiletInletBoard,
+    loader as ToiletInletLoader,
+} from "./components/ToiletInletBoard";
 import { SingleToilet, FindOneToilet } from "./components/SingleToilet";
-import { ToiletForm, action as SearchAction } from "./components/ToiletSearch";
+import {
+    ToiletSearchForm,
+    action as SearchAction,
+} from "./components/ToiletSearch";
 import App from "./App";
 
 export const router = createBrowserRouter([
@@ -13,14 +20,13 @@ export const router = createBrowserRouter([
         children: [
             {
                 loader: ToiletLoader,
-                action: SearchAction,
                 path: "show",
                 element: <ToiletBoard />,
             },
             {
-                loader: ToiletLoader,
+                loader: ToiletInletLoader,
                 path: "show/toilets/:inletType",
-                element: <ToiletBoard />,
+                element: <ToiletInletBoard />,
             },
             {
                 loader: FindOneToilet,
@@ -30,7 +36,7 @@ export const router = createBrowserRouter([
             {
                 path: "/",
                 action: SearchAction,
-                element: <ToiletForm />,
+                element: <ToiletSearchForm />,
             },
         ],
     },
