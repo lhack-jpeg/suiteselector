@@ -6,7 +6,10 @@ function App() {
     return (
         <div className="App">
             <NavBar />
-            <Outlet />
+            <div className="main">
+                <h1 className="title">Welcome to the Suite Selector</h1>
+                <Outlet />
+            </div>
         </div>
     );
 }

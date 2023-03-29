@@ -1,4 +1,13 @@
 .App {
+  padding: 1rem;
+  /* text-align: center; */
+}
+
+.main {
+  padding: 6rem;
+}
+
+.title {
   text-align: center;
 }
 
@@ -32,6 +41,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
