@@ -2,10 +2,8 @@ import { useLoaderData, Link } from "react-router-dom";
 
 export async function FindOneToilet({ params }) {
     let id = params.code;
-    console.log(id);
     const response = await fetch(`http://localhost:4000/show/${id}`);
     const body = await response.json();
-    console.log(body);
     return { body };
 }
 
