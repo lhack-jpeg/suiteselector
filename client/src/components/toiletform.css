@@ -1,0 +1,67 @@
+.form {
+    padding: 1rem;
+}
+
+.form button[type=submit] {
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 30%;
+}
+
+@media (min-width: 40rem) {
+    .form {
+        margin: auto;
+        width: 30rem;
+    }
+}
+
+.select {
+    padding: 0.5rem 0;
+}
+
+.select p {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.select input {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.select input::-webkit-outer-spin-button,
+.select input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.select input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.select label {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.select select {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.inlet-choice input {
+    width: 50%;
+    display: inline;
+}
+
+.inlet-choice label {
+    width: 50%;
+    display: inline;
+}

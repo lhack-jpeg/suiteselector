@@ -1,16 +1,17 @@
 import { Form } from "react-router-dom";
+import "./toiletform.css";
 
 export function ToiletForm() {
     return (
-        <Form method="POST" action="/">
-            <div>
+        <Form method="POST" action="/" className="form">
+            <div className="select">
                 <label htmlFor="wasteType">Select your waste</label>
                 <select id="wasteType" name="waste">
                     <option value="STrap">S Trap</option>
                     <option value="PTrap">P Trap</option>
                 </select>
             </div>
-            <div>
+            <div className="select">
                 <label htmlFor="outlet">
                     What is the distance to the center of the waste (mm):
                 </label>
@@ -22,7 +23,7 @@ export function ToiletForm() {
                     required
                 ></input>
             </div>
-            <div>
+            <div className="select">
                 <p>What is your water inlet position:</p>
                 <div className="select inlet-choice">
                     <input
@@ -42,7 +43,7 @@ export function ToiletForm() {
                     <label htmlFor="backInlet">Back Inlet</label>
                 </div>
             </div>
-            <div>
+            <div className="select back-inlet">
                 <label htmlFor="inletHeight">
                     What is the height of your water point (mm)
                 </label>
@@ -54,7 +55,7 @@ export function ToiletForm() {
                     required
                 ></input>
             </div>
-            <div>
+            <div className="select back-inlet">
                 <label htmlFor="inletOffset">
                     What is the height of your water point (mm)
                 </label>
