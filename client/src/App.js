@@ -1,13 +1,13 @@
-import "./App.css";
-import NavBar from "./components/NavBar";
-import { Outlet } from "react-router-dom";
+import './App.css';
+import NavBar from './components/NavBar';
+import { Outlet } from 'react-router-dom';
 
 function App() {
     return (
-        <div className="App">
+        <div className='App'>
             <NavBar />
-            <div className="main">
-                <h1 className="title">Welcome to the Suite Selector</h1>
+            <div className='main'>
+                <h1 className='title'>Welcome to the Suite Selector</h1>
                 <Outlet />
             </div>
         </div>
@@ -15,3 +15,5 @@ function App() {
 }
 
 export default App;
+
+// Testing git
